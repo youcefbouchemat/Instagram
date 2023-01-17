@@ -14,19 +14,16 @@ struct NavBar: View {
                 .font(.custom("Billabong", size: 40))
             
             Image(systemName: "chevron.down")
-                .font(.system(size: 15))
+                .imageScale(.small)
             
             Spacer()
             HStack{
                 Image(systemName: "plus.app")
-                    .font(.system(size: 25))
-                
+                    
                 Image(systemName: "heart")
-                    .font(.system(size: 25))
                 
                 Image(systemName: "bolt.horizontal.circle")
-                    .font(.system(size: 25))
-            }
+            }.font(.system(size: 25))
         }.padding()
     }
 }
