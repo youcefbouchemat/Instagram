@@ -11,9 +11,21 @@ struct NavBar: View {
     var body: some View {
         HStack{
             Text("Instagram")
-                .font(.custom("Billabong", size: 48))
+                .font(.custom("Billabong", size: 40))
+            
+            Image(systemName: "chevron.down")
+                .font(.system(size: 15))
+            
+            Spacer()
             HStack{
+                Image(systemName: "plus.app")
+                    .font(.system(size: 25))
                 
+                Image(systemName: "heart")
+                    .font(.system(size: 25))
+                
+                Image(systemName: "bolt.horizontal.circle")
+                    .font(.system(size: 25))
             }
         }.padding()
     }

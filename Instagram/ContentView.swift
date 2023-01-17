@@ -9,11 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        VStack{
+            NavBar()
+            Spacer()
+        }
         
-            Text("Instagram")
-                .font(.custom("Billabong", size: 48))
-      
-        .padding()
     }
 }
 
