@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  NavBar.swift
 //  Instagram
 //
 //  Created by apple on 17/1/2023.
@@ -7,18 +7,20 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct NavBar: View {
     var body: some View {
-        
+        HStack{
             Text("Instagram")
                 .font(.custom("Billabong", size: 48))
-      
-        .padding()
+            HStack{
+                
+            }
+        }.padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct NavBar_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        NavBar()
     }
 }

@@ -11,6 +11,8 @@
 		18B8C5C5297734DB0092BF9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8C5C4297734DB0092BF9C /* ContentView.swift */; };
 		18B8C5C7297734DC0092BF9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B8C5C6297734DC0092BF9C /* Assets.xcassets */; };
 		18B8C5CA297734DC0092BF9C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B8C5C9297734DC0092BF9C /* Preview Assets.xcassets */; };
+		18B8C5D2297739290092BF9C /* Regular-Billabong.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18B8C5D1297739290092BF9C /* Regular-Billabong.ttf */; };
+		18B8C5D629773C3D0092BF9C /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8C5D529773C3D0092BF9C /* NavBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,9 @@
 		18B8C5C4297734DB0092BF9C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		18B8C5C6297734DC0092BF9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18B8C5C9297734DC0092BF9C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18B8C5D1297739290092BF9C /* Regular-Billabong.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Regular-Billabong.ttf"; sourceTree = "<group>"; };
+		18B8C5D329773ABC0092BF9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		18B8C5D529773C3D0092BF9C /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +56,11 @@
 		18B8C5C1297734DB0092BF9C /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				18B8C5D329773ABC0092BF9C /* Info.plist */,
+				18B8C5D0297738CE0092BF9C /* Fonts */,
 				18B8C5C2297734DB0092BF9C /* InstagramApp.swift */,
 				18B8C5C4297734DB0092BF9C /* ContentView.swift */,
+				18B8C5D429773C0F0092BF9C /* Components */,
 				18B8C5C6297734DC0092BF9C /* Assets.xcassets */,
 				18B8C5C8297734DC0092BF9C /* Preview Content */,
 			);
@@ -65,6 +73,22 @@
 				18B8C5C9297734DC0092BF9C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18B8C5D0297738CE0092BF9C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				18B8C5D1297739290092BF9C /* Regular-Billabong.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		18B8C5D429773C0F0092BF9C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				18B8C5D529773C3D0092BF9C /* NavBar.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B8C5D2297739290092BF9C /* Regular-Billabong.ttf in Resources */,
 				18B8C5CA297734DC0092BF9C /* Preview Assets.xcassets in Resources */,
 				18B8C5C7297734DC0092BF9C /* Assets.xcassets in Resources */,
 			);
@@ -139,6 +164,7 @@
 			files = (
 				18B8C5C5297734DB0092BF9C /* ContentView.swift in Sources */,
 				18B8C5C3297734DB0092BF9C /* InstagramApp.swift in Sources */,
+				18B8C5D629773C3D0092BF9C /* NavBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +296,7 @@
 				DEVELOPMENT_TEAM = 393MXX83VM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Instagram/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +326,7 @@
 				DEVELOPMENT_TEAM = 393MXX83VM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Instagram/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
