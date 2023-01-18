@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct StoryView: View {
-    private let storyDimension: CGFloat = 70;
+    private let storyDimension: CGFloat = 60;
     
     var image: String;
     var name: String;
