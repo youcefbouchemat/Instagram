@@ -20,6 +20,7 @@
 		18B8C5E02978858C0092BF9C /* PostHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8C5DF2978858C0092BF9C /* PostHeader.swift */; };
 		18B8C5E2297885C00092BF9C /* PostContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8C5E1297885C00092BF9C /* PostContent.swift */; };
 		18B8C5E4297991240092BF9C /* PostFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8C5E3297991240092BF9C /* PostFooter.swift */; };
+		18B8C5E72979AA780092BF9C /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8C5E62979AA780092BF9C /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		18B8C5DF2978858C0092BF9C /* PostHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeader.swift; sourceTree = "<group>"; };
 		18B8C5E1297885C00092BF9C /* PostContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostContent.swift; sourceTree = "<group>"; };
 		18B8C5E3297991240092BF9C /* PostFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFooter.swift; sourceTree = "<group>"; };
+		18B8C5E62979AA780092BF9C /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				18B8C5C2297734DB0092BF9C /* InstagramApp.swift */,
 				18B8C5C4297734DB0092BF9C /* ContentView.swift */,
 				18B8C5D429773C0F0092BF9C /* Components */,
+				18B8C5E52979AA4A0092BF9C /* Screens */,
 				18B8C5C6297734DC0092BF9C /* Assets.xcassets */,
 				18B8C5C8297734DC0092BF9C /* Preview Content */,
 			);
@@ -110,6 +113,14 @@
 				18B8C5E3297991240092BF9C /* PostFooter.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		18B8C5E52979AA4A0092BF9C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				18B8C5E62979AA780092BF9C /* HomeScreen.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +198,7 @@
 				18B8C5DC297885530092BF9C /* Posts.swift in Sources */,
 				18B8C5E02978858C0092BF9C /* PostHeader.swift in Sources */,
 				18B8C5DA297883E60092BF9C /* StoriesList.swift in Sources */,
+				18B8C5E72979AA780092BF9C /* HomeScreen.swift in Sources */,
 				18B8C5C3297734DB0092BF9C /* InstagramApp.swift in Sources */,
 				18B8C5D8297866AD0092BF9C /* StoryView.swift in Sources */,
 				18B8C5E2297885C00092BF9C /* PostContent.swift in Sources */,
