@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Posts: View {
     var body: some View {
-        ScrollView{
+        ScrollView(showsIndicators: false){
             StoriesList()
             ForEach(1..<4){ index in
                 Post(name: "Youcef", profileImage: "people_\(index)", postImage: "post_\(index)", numberOfLikes: 4, content: "hey you all")
