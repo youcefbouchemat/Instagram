@@ -11,24 +11,11 @@ struct ContentView: View {
     var body: some View {
         VStack{
             NavBar()
-            ScrollView(.horizontal,showsIndicators: false){
-                HStack (spacing: 20){
-                    ForEach(1..<9) { index in
-                        StoryView(image: "people_\(index)", name: randomString(length: index + 3))
-                    }
-                    
-                }.padding()
-            }
-            
-            Spacer()
-            
+            Posts()
         }
         
     }
-    func randomString(length: Int) -> String {
-      let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-      return String((0..<length).map{ _ in letters.randomElement()! })
-    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
