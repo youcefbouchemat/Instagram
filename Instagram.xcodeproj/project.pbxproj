@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		186814BD297BEB67004878AA /* reel_4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 186814B9297BEB67004878AA /* reel_4.mp4 */; };
+		186814BE297BEB67004878AA /* reel_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 186814BA297BEB67004878AA /* reel_1.mp4 */; };
+		186814BF297BEB67004878AA /* reel_3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 186814BB297BEB67004878AA /* reel_3.mp4 */; };
+		186814C0297BEB67004878AA /* reel_2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 186814BC297BEB67004878AA /* reel_2.mp4 */; };
+		186814C3297BEBAF004878AA /* MediaFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186814C2297BEBAF004878AA /* MediaFile.swift */; };
 		18B8C5C3297734DB0092BF9C /* InstagramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8C5C2297734DB0092BF9C /* InstagramApp.swift */; };
 		18B8C5C5297734DB0092BF9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8C5C4297734DB0092BF9C /* ContentView.swift */; };
 		18B8C5C7297734DC0092BF9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B8C5C6297734DC0092BF9C /* Assets.xcassets */; };
@@ -24,6 +29,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		186814B9297BEB67004878AA /* reel_4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = reel_4.mp4; sourceTree = "<group>"; };
+		186814BA297BEB67004878AA /* reel_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = reel_1.mp4; sourceTree = "<group>"; };
+		186814BB297BEB67004878AA /* reel_3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = reel_3.mp4; sourceTree = "<group>"; };
+		186814BC297BEB67004878AA /* reel_2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = reel_2.mp4; sourceTree = "<group>"; };
+		186814C2297BEBAF004878AA /* MediaFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaFile.swift; sourceTree = "<group>"; };
 		18B8C5BF297734DB0092BF9C /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B8C5C2297734DB0092BF9C /* InstagramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramApp.swift; sourceTree = "<group>"; };
 		18B8C5C4297734DB0092BF9C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,9 +63,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		186814C1297BEB81004878AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				186814C2297BEBAF004878AA /* MediaFile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		18B8C5B6297734DB0092BF9C = {
 			isa = PBXGroup;
 			children = (
+				186814BA297BEB67004878AA /* reel_1.mp4 */,
+				186814BC297BEB67004878AA /* reel_2.mp4 */,
+				186814BB297BEB67004878AA /* reel_3.mp4 */,
+				186814B9297BEB67004878AA /* reel_4.mp4 */,
 				18B8C5C1297734DB0092BF9C /* Instagram */,
 				18B8C5C0297734DB0092BF9C /* Products */,
 			);
@@ -72,6 +94,7 @@
 		18B8C5C1297734DB0092BF9C /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				186814C1297BEB81004878AA /* Model */,
 				18B8C5D329773ABC0092BF9C /* Info.plist */,
 				18B8C5D0297738CE0092BF9C /* Fonts */,
 				18B8C5C2297734DB0092BF9C /* InstagramApp.swift */,
@@ -181,6 +204,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186814BD297BEB67004878AA /* reel_4.mp4 in Resources */,
+				186814BE297BEB67004878AA /* reel_1.mp4 in Resources */,
+				186814BF297BEB67004878AA /* reel_3.mp4 in Resources */,
+				186814C0297BEB67004878AA /* reel_2.mp4 in Resources */,
 				18B8C5D2297739290092BF9C /* Regular-Billabong.ttf in Resources */,
 				18B8C5CA297734DC0092BF9C /* Preview Assets.xcassets in Resources */,
 				18B8C5C7297734DC0092BF9C /* Assets.xcassets in Resources */,
@@ -196,6 +223,7 @@
 			files = (
 				18B8C5C5297734DB0092BF9C /* ContentView.swift in Sources */,
 				18B8C5DC297885530092BF9C /* Posts.swift in Sources */,
+				186814C3297BEBAF004878AA /* MediaFile.swift in Sources */,
 				18B8C5E02978858C0092BF9C /* PostHeader.swift in Sources */,
 				18B8C5DA297883E60092BF9C /* StoriesList.swift in Sources */,
 				18B8C5E72979AA780092BF9C /* HomeScreen.swift in Sources */,

@@ -12,6 +12,7 @@ struct NavBar: View {
         HStack{
             Text("Instagram")
                 .font(.custom("Billabong", size: 40))
+                
             
             Image(systemName: "chevron.down")
                 .imageScale(.small)
@@ -23,6 +24,7 @@ struct NavBar: View {
                 Image(systemName: "heart")
                 
                 Image(systemName: "bolt.horizontal.circle")
+                    
             }.font(.system(size: 25))
         }.padding()
     }
