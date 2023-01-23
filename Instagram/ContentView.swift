@@ -18,7 +18,7 @@ struct ContentView: View {
                 .tabItem{
                     Image(systemName: "magnifyingglass")
                 }
-            Text("Thered screen content")
+            ReelsScreen()
                 .tabItem{
                     Image(systemName: "livephoto.play")
                 }
@@ -30,7 +30,7 @@ struct ContentView: View {
                 .tabItem{
                     Image(systemName: "person")
                 }
-        }.accentColor(Color.black)
+        }.accentColor(Color("secondaryColor"))
     }
 }
 struct ContentView_Previews: PreviewProvider {
