@@ -11,7 +11,8 @@ struct ReelPlayer: View {
     
     @Binding var reel: Reel;
     
-    private let profileImageDimension: CGFloat = 35;
+    
+    
     
     var body: some View {
         ZStack{
@@ -23,25 +24,8 @@ struct ReelPlayer: View {
                     HStack(alignment: .bottom){
                         
                         VStack(alignment: .leading, spacing: 10){
-                            
-                            HStack(spacing: 15){
-                                
-                                Image("people_\(Int.random(in: 1..<9))")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fill)
-                                    .frame(width: profileImageDimension,height: profileImageDimension)
-                                    .cornerRadius(profileImageDimension/2)
-                             
-                                Text("Youcef Bouchemat")
-                                    .font(.callout.bold())
-                                
-                                Button(action: {
-                                    
-                                }, label: {
-                                    Text("Follow")
-                                        .font(.caption.bold())
-                                })
-                            }
+                            ProfileInfoReelScreen()
+                            DescriptionReelScreen(title: reel.mediafile.title)
                         }
                     }
                 }.frame(maxWidth: .infinity,maxHeight: .infinity,alignment: .bottomLeading)
