@@ -27,6 +27,9 @@ struct ReelPlayer: View {
                             ProfileInfoReelScreen()
                             DescriptionReelScreen(title: reel.mediafile.title)
                         }
+                        
+                        Spacer()
+                        OptionButtonsReelScreen()
                     }
                 }.frame(maxWidth: .infinity,maxHeight: .infinity,alignment: .bottomLeading)
             }
