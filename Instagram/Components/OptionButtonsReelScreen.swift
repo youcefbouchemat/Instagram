@@ -45,7 +45,7 @@ struct OptionButtonsReelScreen: View {
                         .font(.system(size: 25))
                 }
             })
-        }.foregroundColor(Color("secondaryColor"))
+        }.foregroundColor(.white)
             .padding(.bottom,20)
     }
 }

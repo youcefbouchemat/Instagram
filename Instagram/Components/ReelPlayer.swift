@@ -38,6 +38,7 @@ struct ReelPlayer: View {
                         OptionButtonsReelScreen()
                     }
                 }.frame(maxWidth: .infinity,maxHeight: .infinity,alignment: .bottomLeading)
+                    .padding()
             }
         }
     }

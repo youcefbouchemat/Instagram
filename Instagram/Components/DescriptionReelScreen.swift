@@ -52,6 +52,6 @@ struct DescriptionReelScreen: View {
                 
             }
         }
-        .padding(.bottom)
+        
     }
 }
