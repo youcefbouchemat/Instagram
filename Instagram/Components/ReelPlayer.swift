@@ -11,13 +11,19 @@ struct ReelPlayer: View {
     
     @Binding var reel: Reel;
     
-    
-    
+    @State private var showMore: Bool = false;
     
     var body: some View {
         ZStack{
             if let player = reel.player{
                 CustomVideoPlayer(player: player)
+                
+                Color.black.opacity(showMore ? 0.35 : 0)
+                    .onTapGesture {
+                        withAnimation{
+                            showMore.toggle()
+                        }
+                    }
                 
                 VStack{
                     
@@ -25,7 +31,7 @@ struct ReelPlayer: View {
                         
                         VStack(alignment: .leading, spacing: 10){
                             ProfileInfoReelScreen()
-                            DescriptionReelScreen(title: reel.mediafile.title)
+                            DescriptionReelScreen(showMore: $showMore,title: reel.mediafile.title)
                         }
                         
                         Spacer()

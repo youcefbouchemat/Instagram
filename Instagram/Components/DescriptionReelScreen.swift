@@ -11,7 +11,7 @@ struct DescriptionReelScreen: View {
     
     private let moreDescription:String = "English is a vital tool to connect with people from all over the world, and to explore new cultures and possibilities. Whether you are looking for a new adventure, or preparing for your future, studying English opens up opportunities. With over 30 years of experience, UCEDA International has become a leader in teaching English as a Second Language (ESL) with accredited programs for all levels of language learning.";
     
-    @State private var showMore: Bool = false;
+    @Binding var showMore:Bool;
     
     var title:String;
     
@@ -28,8 +28,9 @@ struct DescriptionReelScreen: View {
                             .font(.callout)
                             .fontWeight(.semibold)
                             .foregroundColor(.white)
+                            .multilineTextAlignment(.leading)
                     })
-                }.frame(height: 120)
+                }.frame(height: 160)
             }
             else{
                 Button(action: {
@@ -51,11 +52,6 @@ struct DescriptionReelScreen: View {
                 
             }
         }
-    }
-}
-
-struct DescriptionReelScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        DescriptionReelScreen(title: "cededed")
+        .padding(.bottom)
     }
 }
